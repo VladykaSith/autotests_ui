@@ -14,6 +14,7 @@ with sync_playwright() as pw:
     text=alert.text_content()
     expect(alert).to_be_visible()
     expect(alert).to_have_text("Wrong email or password")
+    page.get
     print("I'm not surprised, motherfuckers!")
     page.wait_for_timeout(3000)
 
