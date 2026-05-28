@@ -1,6 +1,8 @@
+import pytest
 from playwright.sync_api import sync_playwright
 
-
+@pytest.mark.registration
+@pytest.mark.regression
 def test_successful_registration():
     with sync_playwright() as pw:
         browser = pw.chromium.launch(headless=False)
