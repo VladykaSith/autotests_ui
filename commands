@@ -1,1 +1,2 @@
 source ./.venv/Scripts/activate
+echo 'alias up="export PATH=\"\$PWD/.venv/Scripts:\$PATH\""' >> ~/.bashrc && source ~/.bashrc
