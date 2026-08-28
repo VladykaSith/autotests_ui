@@ -2,7 +2,7 @@ import re
 import time
 import allure
 from playwright.sync_api import Page, expect
-from setuptools.errors import LinkError
+# from setuptools.errors import LinkError
 from components.authentication.login_form_component import LoginFormComponent
 from elements.button import Button
 from elements.link import Link
